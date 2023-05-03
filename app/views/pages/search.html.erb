@@ -1,0 +1,7 @@
+<h1 class="text-2xl font-bold leading-7 text-gray-900 border-b-2">Search</h1>
+
+<%= form_with url: articles_path, method: :get do |form| %>
+  <%= form.label :query, "Search Article Titles:" %>
+  <%= form.text_field :query %>
+  <%= form.submit "Search" %>
+<% end %>
